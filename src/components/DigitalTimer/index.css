@@ -1,0 +1,104 @@
+/* Write your CSS here */
+.container {
+  margin: 1rem;
+  padding: 1rem;
+  background-image: linear-gradient(to right, #ffffff, #cffcf1);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  font-family: 'roboto';
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.timer-bg {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  background-position: center;
+  width: 80vh;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px;
+}
+.timer-display {
+  background-color: #ffffff;
+  box-shadow: 13px 8px 16px -3px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 13px 8px 16px -3px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 13px 8px 16px -3px rgba(0, 0, 0, 0.69);
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  padding: 10px;
+  padding-top: 30px;
+}
+.timer-display > h1 {
+  color: #00d9f5;
+}
+.stsp {
+  display: flex;
+  align-items: center;
+}
+.stsp > button {
+  border-style: none;
+  background-color: transparent;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+.stsp > button > img {
+  width: 30px;
+  margin-right: 5px;
+}
+.stsp > p {
+  font-size: 25px;
+  margin-right: 8px;
+}
+.timerLimit {
+  width: 80px;
+  background-image: linear-gradient(to right, #12feaa, #00d9f5);
+  font-weight: bold;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+.incdscbtn {
+  display: flex;
+}
+.incdscbtn > button {
+  border-style: none;
+  background-color: transparent;
+  font-size: 30px;
+}
+.timer-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .timer-bg {
+    width: 50vh;
+    height: 50vh;
+    margin-right: 50px;
+  }
+  .timer-display {
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    padding: 10px;
+    padding-top: 5px;
+    font-size: 20px;
+  }
+}
